@@ -1,0 +1,16 @@
+{
+    "name": "azork/techtask",
+    "authors": [
+        {
+            "name": "Alexander",
+            "email": "alexandershevchuk556@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "classes/"
+        }
+    }
+}
