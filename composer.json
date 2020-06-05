@@ -6,7 +6,10 @@
             "email": "alexandershevchuk556@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "symfony/yaml": "^5.1",
+        "robmorgan/phinx": "^0.12.1"
+    },
 
     "autoload": {
         "psr-4": {
