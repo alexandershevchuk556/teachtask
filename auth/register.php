@@ -1,5 +1,5 @@
 <div class="panel-body w-25 mx-auto" style="margin-top: 15%;">
-    <form action="auth/controllers/RegisterController.php" method="post">
+    <form  method="post">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
@@ -26,6 +26,6 @@
 
         
     </form>
-    <input id="submit" type="submit" value="Register" class="btn btn-info btn-block submit">
+    <input id="submit" type="submit" value="Register" class="btn btn-primary btn-block submit">
     <div class="error"></div>
 </div>
