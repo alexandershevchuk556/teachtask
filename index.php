@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="auth/js/main.js"></script>
-    <title>Document</title>
+    <title>Tech Task</title>
 </head>
 <body>
     <?php include($page); ?>

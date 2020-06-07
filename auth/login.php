@@ -1,11 +1,21 @@
+<?php
+if (!empty($_POST['token'])) {
+
+    $s = file_get_contents('http://ulogin.ru/token.php?token=' . $_POST['token'] . '&host=' . $_SERVER['HTTP_HOST']);
+    $user = json_decode($s, true);
+    $_SESSION['user']['name'] = $user['first_name']; 
+}
+                
+?>
+<?php if (empty($_SESSION['user'])) : ?>
 
     <div class="panel-body w-25 mx-auto" style="margin-top: 15%;">
-        <form id="form"  method="post">
-            
+        <form id="form" method="post">
+
             <div class="form-group">
                 <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address" required>
             </div>
-            
+
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
@@ -13,9 +23,21 @@
                     </div>
                 </div>
             </div>
-            
+
         </form>
+
         <input id="submit" type="submit" value="Login" class="btn btn-primary btn-block">
         <div class="error"></div>
     </div>
-    
+<?php else : ?>
+<div style='width: 250px; height: 1000px; padding-top: 400px; margin-top:20px' class='mx-auto'>
+<script src="//ulogin.ru/js/ulogin.js"></script>
+        <div id="uLogin" data-ulogin="display=panel;theme=flat;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2Fs284494.smrtp.ru%2Flogin;mobilebuttons=0;"></div>
+
+<?php echo  "Hello, {$_SESSION['user']['name']}"; ?>
+<div class="logout">
+    <a href="/logout">Logout</a>
+</div>
+</div>
+
+<?php endif;?>

@@ -15,10 +15,13 @@ $stmtselectuser = $pdo->prepare($sqlselectuser);
 $stmtselectuser->execute(['email' => $email]);
 $user = $stmtselectuser->fetch();
 
+
+
 if (empty($user)) {
     echo "No users found";
 } else {
     if ($user['password'] != $pass) {
+       
         echo "Wrong password";
     } else {
         session_start();
