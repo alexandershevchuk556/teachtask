@@ -79,7 +79,6 @@ $(document).ready(function () {
                         $('.error').html(data);
                         $('.error').show()
                     } else {
-
                         $('.error').html(data);
                         $('.error').show()
                         $('#form').hide();

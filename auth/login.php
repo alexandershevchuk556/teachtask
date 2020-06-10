@@ -33,7 +33,7 @@ if (!empty($_POST['token'])) {
         <div class="error"></div>
     </div>
 <?php else : ?>
-<div style='width: 250px; height: 1000px; padding-top: 400px; margin-top:20px' class='mx-auto'>
+<div style='display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;' class='mx-auto'>
 <script src="//ulogin.ru/js/ulogin.js"></script>
         <div id="uLogin" data-ulogin="display=panel;theme=flat;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2Fs284494.smrtp.ru%2Flogin;mobilebuttons=0;"></div>
 
