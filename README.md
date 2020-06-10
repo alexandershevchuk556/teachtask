@@ -7,4 +7,5 @@ If you want to set it up on your local machine you need to clone this repository
 Install all packages with ```composer install``` and run a migration with ```vendor\bin\phinx migrate``` command.
 
 Then go to the https://ulogin.ru/ and register you own site. 
-Change <script> tag in welcome.php to yours
+Change ```<script>``` tag in welcome.php to yours
+Register your captcha and change the site key in index.php
