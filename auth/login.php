@@ -23,10 +23,13 @@ if (!empty($_POST['token'])) {
                     </div>
                 </div>
             </div>
+            <div id="captcha" class="mb-2"></div>
 
         </form>
 
-        <input id="submit" type="submit" value="Login" class="btn btn-primary btn-block">
+		<script  src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+		</script>
+        <input id="submit" type="submit" value="Login" class="btn btn-primary btn-block" disabled>
         <div class="error"></div>
     </div>
 <?php else : ?>

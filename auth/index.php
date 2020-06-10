@@ -11,19 +11,11 @@
     <script src="auth/js/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript">
-      var recaptchaCallback = function() {
-      	$("#submit").removeAttr("disabled");
-      }
       var onloadCallback = function() {
         grecaptcha.render('captcha', {
-          'sitekey' : '6LdaKQEVAAAAACvT_aWwwGK60xzkO22WYCTpfQ2T',
-          'callback': function () {
-          	$("#submit").removeAttr("disabled");
-          }
+          'sitekey' : '6LdaKQEVAAAAACvT_aWwwGK60xzkO22WYCTpfQ2T'
         });
-         
-     };
-      
+      };
     </script>
     <title>Tech Task</title>
 </head>

@@ -3,7 +3,7 @@
 $dbname = 'techtask_database';
 $dbhost = 'localhost';
 $dbuser = 'root';
-$dbpass = 'root';
+$dbpass = 'password';
 $dbport = 3306;
 
 $stdderr = fopen('php://stderr', 'w');
